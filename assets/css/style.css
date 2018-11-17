@@ -1,0 +1,55 @@
+
+body{
+    background-image: url(../images/breezin.png);
+    background-repeat: repeat;
+    margin: auto;
+}
+
+#record{
+    width:100%;
+    position:absolute;
+    margin: 0px;
+    padding: 0%;
+    z-index: -100;
+    border-radius: 25%;
+}
+
+header{
+    text-align: center;
+    width:100%;
+    position: relative;
+    padding-top:20%;
+    z-index: 1;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+#logolink {
+    font-family: "Fahkwang", serif;
+    font-size: 50px;
+    color: #db5d28;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#sublink {
+    font-family: "Great Vibes", cursive, italic;
+    font-size: 50px;
+    padding: 10px;
+    color: #6091b0;
+    letter-spacing: 4px;
+}
+
+#main-container {
+    background-repeat: no-repeat;
+    z-index:-101;
+
+}
+

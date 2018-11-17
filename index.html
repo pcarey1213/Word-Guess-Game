@@ -3,15 +3,56 @@
 <head>
    <meta charset="uft-8">
    <title> Word-Guess Game</title>
+    <!--link to our javascript--> 
    <script type="text/Javascript" src="./assets/javascript/game.js"></script>
-   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <!--link to our CSS Reset--> 
    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-   <link rel="Stylesheet" type="text/css" href="./assests/css/style.css">
+   <!--link to the bootstrap CDN-->
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <!--link to our CSS-->
+   <link rel="Stylesheet" type="text/css" href="./assets/css/style.css">
+    <!--link to our some desired google fonts-->
+   <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Great+Vibes|Fahkwang&effect=distressed-wood|neon">
+   <!--for this assignment. I've elected to use a combination of the bootstrap CDN and my own CSS
+    to see what ends up best, is easiest to format, and overall, to learn-->
+</head>
 
-</head
-
->
 <body>
+    <img id="record" src="assets/images/lp.jpg">
+<!-- We must first create a header section or div,
+that shows what the game is called. 
+It must also feature clickable links to the main (i.e., index) page.
+As of right now, we have 2 divs within the header, each with link (a) and h tags,
+as well as desired text-->
+<div class="container" id= "wrapper">
+    
+    <header>
+
+        <div class="logo"> 
+            <h1 class="font-effect-distressed-wood"> 
+                <a id="logolink" href="index.html">Hangman Game</a>
+            </h1>
+        </div>
+
+        <div class="subtitle">
+            <h2 class="font-effect-neon">
+                <a id="sublink" href="index.html">70s Style</a>
+            </h2>
+        </div>
+
+    </header>
+
+<!--Next we create a main container(or wrapper),
+     which will include all the contents of the game -->
+
+    <div class= "container" id="main-container">
+      <div class="underscores">_ _ _ _ _</div>  
+      <div class="right guess">right guess</div>
+      <div class="wrong guess">wrong guess</div>
+    </div>
+
+</div>
+
 
 
 </body>
