@@ -3,8 +3,6 @@
 <head>
    <meta charset="uft-8">
    <title> Word-Guess Game</title>
-    <!--link to our javascript--> 
-   <script type="text/Javascript" src="./assets/javascript/game.js"></script>
    <!--link to our CSS Reset--> 
    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
    <!--link to the bootstrap CDN-->
@@ -46,14 +44,101 @@ as well as desired text-->
      which will include all the contents of the game -->
 
     <div class= "container" id="main-container">
-      <div class="underscores">_ _ _ _ _</div>  
-      <div class="right guess">right guess</div>
-      <div class="wrong guess">wrong guess</div>
+<!--Within the container there ill be 3 boxes, or divs, which will feature the following:
+  
+    One header box, with the entirety of the correct guess displaying in a large font, 
+    if the target is correctly guessed.-->
+
+        <div class="row justify-content-center" id="banner">
+            <h1 class="banner">Banner</h1>
+        </div>
+
+    <!--There will be two boxes of equal size below this header box.-->
+
+        <div class="row">
+
+            <div class="col-6" id="Results">
+               
+            </div>
+
+            <div class="col-6" id="Attempts">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Guess the Artist!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Press a key to guess a character in the artist's name.</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Artist Name</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            Wrong Guesses: <span id="wrongGuesses"></span>
+                        </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            Guesses Left: <span id="numGuesses"></span>
+                        </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            Win Counter: <span id="winCounter"></span>
+                        </div>
+                </div>
+
+                
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            Loss Counter: <span id="lossCounter"></span>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+
+<!--in one case, 
+    1) an announcement or prompt to start the game and give instructions 
+    2) a header 'wins' above a box counting the number of wins (i.e., correct guesses) a player has scored 
+    3) the underscores with a letter guess above eah
+    (these must be equal in number to the amount of letters in the target word)
+    4) a header for the number of guesses remaining, under which a box will contain the number of guesses a player may make before losing
+    5) a header for the letters the player has already guessed, under which a box will contain a sequence or array of letters the player has already guessed
+
+The other box will contain 
+    1)an image file, with a smaller image at the top indicating the nature of the game 
+    (maybe a carousel like wheel of fortune but with musical notes on it, etc.). 
+    2) another image file, which will pop up (appear--see Captain Planet Javascript function)
+    if the player guesses the target word correctly. 
+    This image file will be the album art of a '70s album/artist that will correspond to the target word
+    3) an mp3 file of the song guessed will play if the word is guessed correctly
+    4) there has been, as yet, no condition set for if the word is not correctly guessed 
+
+The target words (i.e., albums, artists) must be stored somewhere in the site,
+to be instantiated, one after another, (as underscores of a certain length) with letters then to fill in, 
+and to the call forth an mp3 file with the correct guess. 
+
+-->
+      
     </div>
 
 </div>
 
-
-
 </body>
+
+    <!--link to our javascript--> 
+<script type="text/Javascript" src="./assets/javascript/game.js"></script>
+
 </html> 

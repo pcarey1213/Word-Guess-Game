@@ -53,3 +53,13 @@ a:hover {
 
 }
 
+#banner {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+.col-6 {
+    text-align: center;
+    color: white;
+}
