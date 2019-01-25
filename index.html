@@ -9,25 +9,21 @@
    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
    <!--link to our CSS-->
    <link rel="Stylesheet" type="text/css" href="./assets/css/style.css">
-    <!--link to our some desired google fonts-->
+    <!--link to google fonts-->
    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Great+Vibes|Fahkwang&effect=distressed-wood|neon">
    <!--for this assignment. I've elected to use a combination of the bootstrap CDN and my own CSS
     to see what ends up best, is easiest to format, and overall, to learn-->
 </head>
 
 <body>
-    <img id="record" src="assets/images/lp.jpg">
-<!-- We must first create a header section or div,
-that shows what the game is called. 
-It must also feature clickable links to the main (i.e., index) page.
-As of right now, we have 2 divs within the header, each with link (a) and h tags,
-as well as desired text-->
+
 <div class="container" id= "wrapper">
-    
+
+
     <header>
 
         <div class="logo"> 
-            <h1 class="font-effect-distressed-wood"> 
+            <h1 class="font-effect-neon"> 
                 <a id="logolink" href="index.html">Hangman Game</a>
             </h1>
         </div>
@@ -40,24 +36,15 @@ as well as desired text-->
 
     </header>
 
-<!--Next we create a main container(or wrapper),
-     which will include all the contents of the game -->
-
     <div class= "container" id="main-container">
-<!--Within the container there ill be 3 boxes, or divs, which will feature the following:
-  
-    One header box, with the entirety of the correct guess displaying in a large font, 
-    if the target is correctly guessed.-->
 
         <div class="row justify-content-center" id="banner">
-            <h1 class="banner">Banner</h1>
+            <h1 class="banner"></h1>
         </div>
-
-    <!--There will be two boxes of equal size below this header box.-->
 
         <div class="row">
 
-            <div class="col-6" id="Results">
+            <div class="col-6" id="Results" >
                
             </div>
 
@@ -109,28 +96,6 @@ as well as desired text-->
 
         </div>
 
-<!--in one case, 
-    1) an announcement or prompt to start the game and give instructions 
-    2) a header 'wins' above a box counting the number of wins (i.e., correct guesses) a player has scored 
-    3) the underscores with a letter guess above eah
-    (these must be equal in number to the amount of letters in the target word)
-    4) a header for the number of guesses remaining, under which a box will contain the number of guesses a player may make before losing
-    5) a header for the letters the player has already guessed, under which a box will contain a sequence or array of letters the player has already guessed
-
-The other box will contain 
-    1)an image file, with a smaller image at the top indicating the nature of the game 
-    (maybe a carousel like wheel of fortune but with musical notes on it, etc.). 
-    2) another image file, which will pop up (appear--see Captain Planet Javascript function)
-    if the player guesses the target word correctly. 
-    This image file will be the album art of a '70s album/artist that will correspond to the target word
-    3) an mp3 file of the song guessed will play if the word is guessed correctly
-    4) there has been, as yet, no condition set for if the word is not correctly guessed 
-
-The target words (i.e., albums, artists) must be stored somewhere in the site,
-to be instantiated, one after another, (as underscores of a certain length) with letters then to fill in, 
-and to the call forth an mp3 file with the correct guess. 
-
--->
       
     </div>
 

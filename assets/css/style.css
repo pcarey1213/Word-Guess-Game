@@ -5,21 +5,20 @@ body{
     margin: auto;
 }
 
-#record{
-    width:100%;
-    position:absolute;
-    margin: 0px;
-    padding: 0%;
-    z-index: -100;
-    border-radius: 25%;
+#wrapper{
+    padding-top:100px;
+    padding-bottom:200px;
+    background-image: url(../images/lp.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
+
 
 header{
     text-align: center;
     width:100%;
     position: relative;
-    padding-top:20%;
-    z-index: 1;
 
 }
 
@@ -43,7 +42,7 @@ a:hover {
     font-family: "Great Vibes", cursive, italic;
     font-size: 50px;
     padding: 10px;
-    color: #6091b0;
+    color: #db5d28;
     letter-spacing: 4px;
 }
 
@@ -60,6 +59,9 @@ a:hover {
 
 }
 .col-6 {
+    font-weight: bold;
     text-align: center;
-    color: white;
+    color: rgb(14, 221, 31);
+    font-family: "Fahkwang", serif;
+    
 }

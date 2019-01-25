@@ -1,7 +1,7 @@
 // GLOBAL VARIABLES
 //----------------------
 // Arrays and variables for holding data
-var wordOptions = ["marvin", "smokey", "lionel", "roberta", "donny", "barry"];
+var wordOptions = ["marvin"];
 var selectedWord = "" ;
 var lettersInWord  = [];
 var numBlanks = 0;
@@ -73,7 +73,9 @@ function checkLetters(letter) {
     //testing / Debugging 
     console.log(blanksAndSuccesses)
 
-
+    document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
+    document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
+    document.getElementById("numGuesses").innerHTML = guessesLeft;
     
 }
 
@@ -81,42 +83,46 @@ function checkLetters(letter) {
 function roundComplete() {
 
     console.log ("Win Count: " + winCount + " | Loss Count: " + " | Guesses Left: " + guessesLeft);
-
-    document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
-    document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
-    document.getElementById("numGuesses").innerHTML = guessesLeft;
     
     //Check if user won
  
     if (lettersInWord.toString() == blanksAndSuccesses.toString()) {
+        console.log(lettersInWord.toString());
+        console.log(blanksAndSuccesses.toString());
+        if (lettersInWord.join("") === "marvin") {
+            
+            document.getElementById("banner").innerHTML = "What's Going On?"
+        }
+
 
         winCount++;
 
-        console.log("You Won!");
 
         //Update win counter in HTML
         document.getElementById("winCounter").innerHTML = winCount;
         
         startGame();
+        
     }
     
     //Check if user lost 
 
     else if (guessesLeft == 0) {
         lossCount++;
-        console.log("You lost!");
+
+
         
         //Update loss counter in HTML
         document.getElementById("lossCounter").innerHTML = lossCount;
 
+        
         startGame();
-
     }
     
    
    
    
-}
+};
 
 
 //MAIN PROCESS
@@ -129,7 +135,9 @@ document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
     roundComplete();
-
 }
+
+
+
 
 
